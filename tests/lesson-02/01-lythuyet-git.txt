@@ -1,0 +1,12 @@
+// giải thích các câu lệnh: git init, git add <file_name>, git add ., git
+commit -m “message”.
+---
+
+1. git init 
+-> "git init" dùng để khởi tạo một repository Git mới trong thư mục hiện tại
+2. git add <file_name> 
+-> lệnh này dùng để thêm một file cụ thể vào "staging area". File này sẽ dc Git đánh dấu để chuẩn bị commit
+3. git add .
+-> dùng để thêm tất cả file mới or file đã chỉnh sửa trong thư mục hiện tại vào "staging area"
+4. git commit -m"message"
+-> lệnh này tạo ra một commit mới với mô tả đi kèm, giúp user hiểu thay đổi được thực hiện nhằm mục đích gì.
