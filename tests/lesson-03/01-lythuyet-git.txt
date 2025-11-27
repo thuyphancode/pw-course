@@ -1,0 +1,22 @@
+BÀI TẬP
+---------
+Bài 1:
+1. Commit message
+   Vùng ảnh hưởng: LOCAL REPOSITORY
+   Lệnh: git commit --amend
+   Ý nghĩa: Sửa commit gần nhất (mở editor để đổi message).
+
+2. Commit message (sửa nhanh)
+   Vùng ảnh hưởng: LOCAL REPOSITORY
+   Lệnh: git commit --amend -m "<message>"
+   Ý nghĩa: Sửa nhanh message của commit gần nhất.
+
+3. Bỏ file khỏi staging
+   Vùng ảnh hưởng: STAGING AREA → WORKING DIRECTORY
+   Lệnh: git restore --staged <file>
+   Ý nghĩa: Gỡ file khỏi Staging, trả về Working Directory.
+
+4. Un-commit 1 commit
+   Vùng ảnh hưởng: LOCAL REPOSITORY → WORKING DIRECTORY
+   Lệnh: git reset HEAD~1
+   Ý nghĩa: Xóa commit gần nhất và trả code về Working Directory.

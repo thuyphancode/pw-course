@@ -1,0 +1,68 @@
+Bài 2
+---------
+1.
+a. Tạo 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working directory: empty
+- Staging: empty
+- Repo:empty
+
+b. Chạy lệnh: git init
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: empty
+- Repo:empty
+
+c. Chạy lệnh: git commit -m”init project”
+- Local: empty: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: empty
+- Repo: 1 commit (commit rỗng, chưa có file)
+
+d. Chạy lệnh: git add file1
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: file1
+- Repo:commit 1: "init project"  (commit rỗng)
+
+e. Chạy lệnh: git commit -m”add file”
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: empty
+- Repo: 2 commits
+  + commit 1: "init project"  (commit rỗng)
+  + commit 2: "add file"      (commit chứa file1)
+
+f. Chạy lệnh: git add .
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: file2, file3
+- Repo: 2 commits
+  + commit 1: "init project"  (commit rỗng)
+  + commit 2: "add file"      (commit chứa file1)
+
+g. Chạy lệnh: git restore --staged file2
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: file3
+- Repo:2 commits
+  + commit 1: "init project"  (commit rỗng)
+  + commit 2: "add file"      (commit chứa file1)
+
+h. Chạy lệnh: git commit -m”add all files”
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: empty
+- Repo: 3 commits
+  + commit 1: "init project"  (commit rỗng)
+  + commit 2: "add file"      (commit chứa file1)
+  + commit 3: "add all files" ( commit chứa file 3)
+
+
+i. Chạy lệnh: git reset HEAD~1
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging: empty
+- Repo: 2 commit
+  + commit 1: "init project"  (commit rỗng)
+  + commit 2: "add file"      (commit chứa file1)
