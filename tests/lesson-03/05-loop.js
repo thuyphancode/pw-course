@@ -32,6 +32,7 @@ for (let i = 1; i <= 10; i++) {
     const email = `user${i}@example`;
     console.log(email);
 }
+  
 
 /* 5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và
 in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau:
